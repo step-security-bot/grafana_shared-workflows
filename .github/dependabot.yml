@@ -21,3 +21,18 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /actions/lint-pr-title
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /actions/lint-pr-title
+    schedule:
+      interval: daily
