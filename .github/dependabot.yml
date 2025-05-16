@@ -21,3 +21,28 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /actions/dependabot-auto-triage
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /actions/lint-pr-title
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /actions/lint-pr-title
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /scripts/generate-catalog-info
+    schedule:
+      interval: daily
